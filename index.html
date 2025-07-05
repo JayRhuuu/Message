@@ -3,104 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blossoming Flowers at Magical Night</title>
+  <title>Sweet Love Presentation</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="https://em-content.zobj.net/source/microsoft-teams/363/sparkling-heart_1f496.png" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    @keyframes tulipBounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-20px); }
-    }
-    .animate-tulip {
-      animation: tulipBounce 3s infinite;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1); }
-    }
-    @keyframes fadeInSlide {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .fade-in { animation: fadeIn 1.2s ease-out; }
-    .fade-in-slide { animation: fadeInSlide 1s ease-out forwards; }
-  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            tulip: "tulipBounce 3s infinite",
+          },
+          keyframes: {
+            tulipBounce: {
+              "0%, 100%": { transform: "translateY(0)" },
+              "50%": { transform: "translateY(-20px)" },
+            },
+          },
+        },
+      },
+    };
+  </script>
 </head>
 
-<body class="text-white font-sans">
+<body class="bg-gradient-to-r from-purple-500 via-pink-400 to-blue-400 min-h-screen flex items-center justify-center flex-col text-white text-center p-6">
 
-  <!-- Welcome Section -->
-  <section id="welcome" class="bg-gradient-to-r from-purple-500 via-pink-400 to-blue-400 min-h-screen flex flex-col items-center justify-center p-6 text-center">
-    <a href="flowers/index.html" class="w-64 h-64 animate-tulip bg-purple-300 rounded-full shadow-xl mb-8 flex items-center justify-center text-purple-900 font-bold text-xl hover:scale-105 transition-all">
-      🌷 Click to Bloom 🌷
-    </a>
-    <h1 class="text-4xl font-bold mb-4 drop-shadow-lg">Hi, Welcome to My Website</h1>
-    <p class="text-lg max-w-xl">I made this just for you. Hope it brings a smile to your beautiful face!</p>
-  </section>
+  <!-- Animated Tulip -->
+  <a href="flowers-img-mess/index.html" class="w-64 h-64 animate-tulip bg-purple-300 rounded-full shadow-xl mb-8 flex items-center justify-center text-purple-900 font-bold text-xl hover:scale-105 transition-all">
+    🌷 Click to Bloom 🌷
+  </a>
 
-  <!-- Photo Section -->
-  <section id="photo" class="bg-gradient-to-bl from-blue-400 via-purple-500 to-pink-400 min-h-screen flex flex-col items-center justify-center text-center p-6">
-    <div class="relative w-80 h-80 mb-10 fade-in">
-      <img src="img/mi1.jpg" alt="Us Together" class="w-full h-full object-cover rounded-full border-8 border-white shadow-xl" />
-      <div class="absolute inset-0 rounded-full border-4 border-pink-300 animate-pulse"></div>
-      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-pink-600 text-white px-4 py-1 rounded-full shadow-lg text-sm font-semibold">
-        MIII 💜
-      </div>
-    </div>
-    <h2 class="text-3xl font-bold mb-4 drop-shadow-md">Faith Irysh Yutuc</h2>
-    <p class="max-w-md text-base sm:text-lg mb-8 leading-relaxed">
-      "I’m not here to rush or impress you with big words. I’m here to show you, little by little, that my intentions are real. I want to know you, understand you, and grow with you. This is not just a phase. It’s the start of something genuine, if you'll let me."
-    </p>
-    <div class="flex space-x-6 mt-4">
-      <a href="#welcome" class="bg-white text-purple-700 hover:bg-purple-100 transition-all px-6 py-3 rounded-full text-lg font-semibold shadow-md">
-        &larr; Back
-      </a>
-      <a href="#message" class="bg-white text-pink-700 hover:bg-pink-100 transition-all px-6 py-3 rounded-full text-lg font-semibold shadow-md">
-        Next &rarr;
-      </a>
-    </div>
-  </section>
-
-  <!-- Message Section -->
-  <section id="message" class="bg-gradient-to-b from-purple-800 via-purple-600 to-blue-500 min-h-screen flex items-center justify-center text-white p-6">
-    <div class="max-w-3xl text-center space-y-6 fade-in-slide">
-      <h1 class="text-3xl sm:text-4xl font-bold mb-2">Hi Faith Irysh Yutuc (MI💜)</h1>
-      <p class="text-base sm:text-lg leading-relaxed">
-        Sorry kung late na me napachat about sa ginawa mo nung kagabi (July 04, 2025). Speechless talaga ako sa PPT na ginawa mo and hindi ko inexpect na gagawa ka ng PPT, pero may hint na me na papayagan mo na ako. Nung nagpaalam ako sayo kahapon na dadaanan muna ako ng church, nagpray ako nun and kasama yung pagpapayag mo sa akin manligaw.
-      </p>
-      <p class="text-base sm:text-lg leading-relaxed">
-        Naiisip ko kung papayagan mo ako manligaw ay parang ang bilis kasi 2 weeks pa lang ih. Kaya tinatanong kita kung totoo ba ito or kung hindi ka napepressure. And now, kita ko naman na masaya ka naman sa ginawa mo and feel ko din na interested ka. And back to the main topic HAHAHAHAHAHA!
-      </p>
-      <p class="text-base sm:text-lg leading-relaxed">
-        THB, first time ko talaga maranasan yun — yung girl yung mag-e-effort sa akin ng ganon kahit sa panliligaw pa lang. Nahihiya din ako kasi nag-effort ka pa para payagan mo ako manligaw, pero nagpapasalamat talaga ako sayo na pinayagan mo na ako manligaw, and lalo na kay God kasi nakilala kita. Hindi ko ma-explain yung nararamdaman ko ngayon, hehehehe mix emotion kasi pero nangunguna yung sobrang saya.
-      </p>
-      <p class="text-base sm:text-lg leading-relaxed">
-        Parang nagugulat din ako sa mga nangyayari kung legit ba or hindi pero nakita ko is totoo ngaaa kasi nafefeel talaga kitaa.
-      </p>
-      <p class="text-base sm:text-lg leading-relaxed font-semibold">
-        So ngayon, ipinapangako ko sayo na yung nakita mo nung una is hindi magbabago and ako talaga yun. Mahirap man maniwala sa mundong ito pero I’ll do my best na ipakita sayo na totoo talaga yung mga nakikita mo.
-      </p>
-      <p class="text-lg leading-relaxed font-bold italic text-pink-200">
-        And now... we are officially in the courting stage: July 04, 2025 💜
-      </p>
-      <p class="text-base italic text-pink-100">
-        BTW, sorry if sa gantong paraan ko lang napakita yung reaction ko sa effort mo na ginawa 😓  
-        Promise babawi ako 🤭
-      </p>
-      <p class="text-sm opacity-80 mt-4">From: Jay Rhuel Platon (DI💜)</p>
-      <p class="text-sm opacity-70 italic">Call Sign: MI & DI 💕</p>
-      <div class="mt-8">
-<a href="#welcome" class="inline-block bg-white text-purple-700 font-semibold px-6 py-2 rounded-full shadow hover:bg-purple-100 transition-all">
-  &larr; Back to Welcome
-</a>
-
-        </a>
-      </div>
-    </div>
-  </section>
+  <!-- Greeting -->
+  <h1 class="text-4xl font-bold mb-4 drop-shadow-lg">Hi, Welcome to My Website</h1>
+  <p class="text-lg max-w-xl">I made this just for you. Hope it brings a smile to your beautiful face!</p>
 
 </body>
 </html>

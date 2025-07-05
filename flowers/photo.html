@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Sweet Moments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.95);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 1.2s ease-out;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-gradient-to-bl from-blue-400 via-purple-500 to-pink-400 min-h-screen flex flex-col items-center justify-center text-white text-center p-6"
+  >
+    <!-- Romantic Photo with Heart Design -->
+    <div class="relative w-80 h-80 mb-10 fade-in">
+      <img
+        src="img/mi1.jpg"
+        alt="Us Together"
+        class="w-full h-full object-cover rounded-full border-8 border-white shadow-xl"
+      />
+      <div
+        class="absolute inset-0 rounded-full border-4 border-pink-300 animate-pulse"
+      ></div>
+      <div
+        class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 bg-pink-600 text-white px-4 py-1 rounded-full shadow-lg text-sm font-semibold"
+      >
+        MIII 💜
+      </div>
+    </div>
+
+    <h2 class="text-3xl font-bold mb-4 drop-shadow-md">Faith Irysh Yutuc</h2>
+    <p class="max-w-md text-lg mb-8 leading-relaxed">
+      "I’m not here to rush or impress you with big words. I’m here to show you,
+      little by little, that my intentions are real. I want to know you,
+      understand you, and grow with you. This is not just a phase. It’s the
+      start of something genuine, if you'll let me."
+    </p>
+
+    <!-- Navigation Buttons -->
+    <div class="flex space-x-6 mt-4">
+      <a
+        href="/flowers/index.html"
+        class="bg-white text-purple-700 hover:bg-purple-100 transition-all px-6 py-3 rounded-full text-lg font-semibold shadow-md"
+      >
+        &larr; Back
+      </a>
+      <a
+        href="message.html"
+        class="bg-white text-pink-700 hover:bg-pink-100 transition-all px-6 py-3 rounded-full text-lg font-semibold shadow-md"
+      >
+        Next &rarr;
+      </a>
+    </div>
+  </body>
+</html>
